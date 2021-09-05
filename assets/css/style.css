@@ -1,38 +1,38 @@
 * {
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
   }
   .body {
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 10px;
   }
-  /*Navigation Bar/Header*/
+  /*header*/
   .navGradient {
     background-image: linear-gradient(
       to right,
-      rgb(51, 97, 185),
-      rgb(32, 10, 76)
+      rgb(41, 82, 160),
+      rgb(28, 2, 80)
     );
   }
   h1 {
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
   }
-  /*my container*/
-  .myContainer {
-    margin: 1rem;
-    max-width: 98%;
+  /*main container*/
+  .mainContainer {
+    margin: 30px;
+    max-width: 96%;
   }
-  /* search div */
+  /* search by city */
   .searchCity {
     padding: 0;
   }
   input {
-    padding: 0.5rem;
+    padding: 2px;
   }
   .searchCityDiv input,
   .searchBtn {
@@ -40,19 +40,19 @@
   }
   .searchCityDiv label {
     color: black;
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: bold;
   }
   .searchCityDiv input {
     border: 1px solid rgb(174, 174, 174);
-    height: 2.5rem;
+    height: 40px;
     border-radius: 5px;
     margin-top: 1rem;
   }
   .searchBtn {
     color: white;
     background-color: rgb(80, 152, 230);
-    margin-top: 1rem;
+    margin-top: 15px;
   }
   hr {
     width: 90%;
@@ -69,38 +69,38 @@
     margin-top: 1rem;
     text-align: center;
     margin-left: 0%;
-    padding: 0.5rem;
+    padding: 10px;
     border-radius: 5px;
     width: 100%;
   }
-  /* searched city list */
   
   /* current weather */
   .weatherInfo {
     padding-left: 0;
   }
   .currentWeather {
-    margin-top: 0.5rem;
+    margin-top: 10px;
     border: 1px solid black;
   }
-  /* Five Day forecast*/
+  
+  /* 5-day forecast*/
   .dailyForecastDate {
     font-weight: bold;
   }
   .forecastDay {
-    background-color: rgb(142, 155, 168);
+    background-color: rgb(6, 29, 51);
     color: white;
-    margin-right: 1rem;
+    margin-right: 10px;
   }
   .forecastHeading {
     font-weight: bold;
-    margin: 1rem 0;
+    margin: 10px 0;
   }
   
   /*uv index*/
   .favorable,
   .severe {
-    padding: 0.25rem;
+    padding: 1px;
     border-radius: 5px;
     color: white;
   }
@@ -109,7 +109,7 @@
   }
   .moderate {
     background-color: yellow;
-    padding: 0.25rem;
+    padding: 1px;
     border-radius: 5px;
     color: black;
   }

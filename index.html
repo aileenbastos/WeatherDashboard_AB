@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">      
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Weather App</title>
+    <title>Weather Dashboard</title>
 </head>
 <body>
     <header>
-        <!--Header/navBar-->
+        <!--header-->
         <nav class="navGradient">
             <h1>Weather Dashboard</h1>
         </nav>
     </header>
-    <!--Container for main-->
-    <main class=" container container-fluid myContainer">
+    <!--main container-->
+    <main class=" container container-fluid mainContainer">
         <div class="row">
             <div class="col-lg-3 searchCity">
-                <!--searchCityDiv start-->
+                <!--search by city-->
                 <div class="searchCityDiv">
                     <label for="searchCity">Search for a City:</label>
                     <input type="text" name="searchCity" id="searchCity">
@@ -27,17 +27,14 @@
                     <button class="btn searchBtn" type="submit">Search</button>
                 </div>
                 <hr>
-                <!--searchCityDiv end ^^-->
-                <!--searchED Cities Div start-->
+                <!--searched cities-->
                     <div class="searchedCities">
                         <ul class="searchedCitiesList">
                         </ul>
                     </div>
-                <!--searchED Cities Div end ^^-->
             </div>
-            <!--Weather info-->
+            <!--current weather-->
             <div class="weatherInfo col-lg-9 ">
-                <!--current weather-->
                 <div class="row currentWeather">
                     <h2 class="cityNameDate"></h2>
                     <p class="temp">Temp:</p>
@@ -45,7 +42,7 @@
                     <p class="humidity">Humidity</p>
                     <p class="uvIndex">UV index</p>
                 </div>
-                <!--5 day forecast-->
+                <!--5-day forecast-->
                 <div class="row forecast">
                     <h3 class="forecastHeading">5-Day Forecast:</h3>
                 </div>

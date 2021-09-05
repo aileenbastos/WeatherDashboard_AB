@@ -1,196 +1,118 @@
-
-  * {
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
   }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: white;
+  .body {
+    padding: 0;
+    margin: 0;
   }
-  
-  header {
-    background-color: rgb(1, 1, 68);
-    text-align: center;
+  /*Navigation Bar/Header*/
+  .navGradient {
+    background-image: linear-gradient(
+      to right,
+      rgb(51, 97, 185),
+      rgb(32, 10, 76)
+    );
   }
-  
   h1 {
-    color: white;
-    padding: 7px;
-    font-size: 40px;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .col-search {
-    flex: 25%;
-  }
-  
-  /*search form*/
-  
-  .search-form {
-    width: 100%;
-  }
-  
-  .search-form {
-    min-width: 50%;
-    margin: 2px 2px 4px 2px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  
-  .form-label {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
-    padding: 0 5px;
-    color: black;
-    justify-content: center;
-  }
-  
-  .form-input {
-    border: 1px solid darkgray;
-    font-size: 1.3rem;
-    border-radius: 5px;
-    height: 50px;
-    width: 100%;
-    padding-left: 10px;
+    color: white;
     text-align: center;
-    margin: 2px 0 4px 0;
+    padding: 1rem;
   }
-  
-  /* * BUTTON STYLING */
-  
-  .btn {
-    width: 100%;
+  /*my container*/
+  .myContainer {
+    margin: 1rem;
+    max-width: 98%;
+  }
+  /* search div */
+  .searchCity {
+    padding: 0;
+  }
+  input {
+    padding: 0.5rem;
+  }
+  .searchCityDiv input,
+  .searchBtn {
+    width: 90%;
+  }
+  .searchCityDiv label {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .searchCityDiv input {
+    border: 1px solid rgb(174, 174, 174);
+    height: 2.5rem;
     border-radius: 5px;
-    height: 45px;
-    font-size: 20px;
-    border: none;
-    transition: 0.5s;
-    cursor: pointer;
+    margin-top: 1rem;
   }
-  
-  .new-buttons {
-    display: flex;
-    flex-direction: column;
-    min-width: 50%;
-    margin: 2px 3px 4px 4px;
-  }
-  
-  .search-btn {
-    background: rgb(45, 125, 190);
-    cursor: pointer;
+  .searchBtn {
     color: white;
-    transition: 0.5s;
-    letter-spacing: 2px;
+    background-color: rgb(80, 152, 230);
+    margin-top: 1rem;
   }
-  
-  .city-btn {
-    margin: 2px 0;
-    background: white;
-    color: darkgray;
-    border: 2px solid darkgray;
-  }
-  
-  .city-btn:hover {
-    background: darkgray;
-    color: white;
-  }
-  
   hr {
-    height: 3px;
-    background: darkgray;
+    width: 90%;
+  }
+  .searchedCitiesList {
+    list-style: none;
+    margin: 0%;
+    padding: 0;
+    width: 90%;
+  }
+  
+  .cityBtn {
+    background-color: rgb(174, 174, 174);
+    margin-top: 1rem;
     text-align: center;
-    width: 95%;
-    margin-left: 2px;
+    margin-left: 0%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
   }
+  /* searched city list */
   
-  .second-col {
-    margin-top: 2px;
-    margin-left: 2px;
-    flex: 70%;
+  /* current weather */
+  .weatherInfo {
+    padding-left: 0;
   }
-  
-  .current-weather-container {
-    flex: 100%;
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
+  .currentWeather {
+    margin-top: 0.5rem;
+    border: 1px solid black;
   }
-  
-  .current-weather-container p {
-    font-size: 1.3px;
-    margin-bottom: 2px;
-    padding: 1.5px 1px;
-  }
-  
-  .description {
-    color: gray;
-    font-size: 15px;
+  /* Five Day forecast*/
+  .dailyForecastDate {
     font-weight: bold;
   }
+  .forecastDay {
+    background-color: rgb(142, 155, 168);
+    color: white;
+    margin-right: 1rem;
+  }
+  .forecastHeading {
+    font-weight: bold;
+    margin: 1rem 0;
+  }
   
-  .current-weather {
-    font-size: 1rem;
-    color: black;
-    background: white;
-    width: 30%;
+  /*uv index*/
+  .favorable,
+  .severe {
+    padding: 0.25rem;
     border-radius: 5px;
-    border: 2px solid darkgray;
-    text-align: center;
+    color: white;
   }
-  
-  .current-icon {
-    background: gray;
-    border-radius: 12px;
-    transform: translateY(8px);
+  .favorable {
+    background-color: green;
   }
-  
-  .col-five-day {
-    padding: 2px;
-    height: 40%;
-  }
-  
-  .five-day-weather {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  h2 {
-    color: black;
-    font-size: 30px;
-    margin-bottom: 3px;
-  }
-  
-  .day {
-    min-height: 200px;
-    background: navy;
-    padding: 3px;
-    margin-right: 20px;
-    margin-top: 3px;
-    flex: 15%;
-    border-radius: 7px;
-  }
-  
-  .day h3 {
-    font-size: 20px;
-    color: black;
-  }
-  
-  .day p {
-    margin-top: 10px;
-    color: black;
-    font-size: 20px;
-  }
-  
-  span {
+  .moderate {
+    background-color: yellow;
+    padding: 0.25rem;
     border-radius: 5px;
-    padding: 1px 4px 0 3px;
-    margin-left: 5px;
-    font-size: 15px;
+    color: black;
+  }
+  .severe {
+    background-color: red;
   }

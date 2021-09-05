@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>World Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-    
+    <!--banner header-->
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <!--search, one-day, and five-day forecast divs-->
+    <main>
+        <div class="row">
+          <!--search form-->
+          <div class="col-search">
+              <form id="user-form" class="search-form">
+                <label for="city-search" class="form-label">
+                    Search for a City
+                </label>
+                <input
+                  type="text"
+                  id="city-search"
+                  class="form-input"
+                  name="city-search"
+                  aria-label="Search for a city"
+                  autofocus="true"
+                />
+                <button type="submit" class="btn search-btn">Search</button>
+              </form>
+              <hr />
+           <div class="new-buttons"></div>
+          </div>
+  
+        <div class="col-one-day">
+          <section class="current-weather">
+            <h2 class="city-day"></h2>
+            
+          </section>
+        
+          <div class="col-five-day">
+            
+            <section class="five-day-weather">
+              
+            </section>
+          </div>
+        </div>
+    </main>
 </body>
 </html>

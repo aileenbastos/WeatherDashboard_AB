@@ -34,8 +34,7 @@ Marketing professional, single mom, beginner coder, CrossFit athlete.
   
 ## Screenshots
 
-C:\Users\Aileen\Desktop\challenges\WeatherDashboard_AB\assets\images\screenshot
-  
+![screenshot](https://user-images.githubusercontent.com/87397372/132140442-55587b52-6315-400e-b6f8-cc60420c78d9.jpg)  
 ## Deployment
 
 Deployed Site:

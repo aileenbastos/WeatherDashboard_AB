@@ -8,7 +8,7 @@
     margin: 10px;
   }
   /*header*/
-  .navGradient {
+  .navBarColors {
     background-image: linear-gradient(
       to right,
       rgb(41, 82, 160),
@@ -22,34 +22,34 @@
     text-align: center;
     padding: 20px;
   }
-  /*main container*/
-  .mainContainer {
+  /*primary container*/
+  .primaryContainer {
     margin: 30px;
     max-width: 96%;
   }
   /* search by city */
-  .searchCity {
+  .searchByCity {
     padding: 0;
   }
   input {
     padding: 2px;
   }
-  .searchCityDiv input,
+  .citySearch input,
   .searchBtn {
     width: 90%;
   }
-  .searchCityDiv label {
+  .citySearch label {
     color: black;
     font-size: 30px;
     font-weight: bold;
   }
-  .searchCityDiv input {
+  .citySearch input {
     border: 1px solid rgb(174, 174, 174);
     height: 40px;
     border-radius: 5px;
     margin-top: 1rem;
   }
-  .searchBtn {
+  .searchButton {
     color: white;
     background-color: rgb(80, 152, 230);
     margin-top: 15px;
@@ -64,7 +64,7 @@
     width: 90%;
   }
   
-  .cityBtn {
+  .cityButton {
     background-color: rgb(174, 174, 174);
     margin-top: 1rem;
     text-align: center;
@@ -98,13 +98,12 @@
   }
   
   /*uv index*/
-  .favorable,
-  .severe {
+  .good, .bad {
     padding: 1px;
     border-radius: 5px;
     color: white;
   }
-  .favorable {
+  .good {
     background-color: green;
   }
   .moderate {
@@ -113,6 +112,6 @@
     border-radius: 5px;
     color: black;
   }
-  .severe {
+  .bad {
     background-color: red;
   }

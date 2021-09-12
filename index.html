@@ -11,25 +11,25 @@
 <body>
     <header>
         <!--header-->
-        <nav class="navGradient">
+        <nav class="navBarColors">
             <h1>Weather Dashboard</h1>
         </nav>
     </header>
-    <!--main container-->
-    <main class=" container container-fluid mainContainer">
+    <!--primary container-->
+    <main class=" container container-fluid primaryContainer">
         <div class="row">
             <div class="col-lg-3 searchCity">
                 <!--search by city-->
-                <div class="searchCityDiv">
-                    <label for="searchCity">Search for a City:</label>
-                    <input type="text" name="searchCity" id="searchCity">
+                <div class="citySearch">
+                    <label for="searchByCity">Search for a City:</label>
+                    <input type="text" name="searchByCity" id="searchCity">
                     <br>
-                    <button class="btn searchBtn" type="submit">Search</button>
+                    <button class="btn searchButton" type="submit">Search</button>
                 </div>
                 <hr>
-                <!--searched cities-->
-                    <div class="searchedCities">
-                        <ul class="searchedCitiesList">
+                <!--previously searched cities-->
+                    <div class="previousCities">
+                        <ul class="listPreviousCities">
                         </ul>
                     </div>
             </div>
@@ -37,10 +37,10 @@
             <div class="weatherInfo col-lg-9 ">
                 <div class="row currentWeather">
                     <h2 class="cityNameDate"></h2>
-                    <p class="temp">Temp:</p>
-                    <p class="wind">Wind: </p>
+                    <p class="temperature">Temperature:</p>
+                    <p class="windFactor">Wind Factor: </p>
                     <p class="humidity">Humidity</p>
-                    <p class="uvIndex">UV index</p>
+                    <p class="uvIndex">UV Index</p>
                 </div>
                 <!--5-day forecast-->
                 <div class="row forecast">

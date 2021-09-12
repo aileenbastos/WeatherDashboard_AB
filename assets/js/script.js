@@ -10,10 +10,10 @@ function displaySearchedCities() {
     for(i = 0; i < searchedCities.length; i++) {
         var searchedCityListEl = document.createElement("li");
         searchedCityListEl.classList = "searchedCity";
-        var searchedCityBtn = document.createElement("button");
-        searchedCityBtn.classList = "btn cityBtn";
-        searchedCityBtn.textContent = searchedCities[i];
-        searchedCityListEl.appendChild(searchedCityBtn);
+        var searchedCityButton = document.createElement("button");
+        searchedCityButton.classList = "btn cityButton";
+        searchedCityButtotn.textContent = searchedCities[i];
+        searchedCityListEl.appendChild(searchedCityButton);
         $(".searchedCitiesList").append(searchedCityListEl);
     }
 }
@@ -66,11 +66,11 @@ function getCurrentWeather(city) {
                 var currentUvEl = document.createElement("span");
                 currentUvEl.textContent = currentUvIndex;
                 if(currentUvIndex <= 2) {
-                    currentUvEl.classList = "favorable";
-                } else if(currentUvIndex > 2 && currentUvIndex < 6) {
+                    currentUvEl.classList = "good";
+                } else if(currentUvIndex > 3 && currentUvIndex < 6) {
                     currentUvEl.classList = "moderate";
-                } else if (currentUvIndex >= 6) {
-                    currentUvEl.classList = "severe";
+                } else if (currentUvIndex >= 7) {
+                    currentUvEl.classList = "bad";
                 }
 
                 $(".temp").text("Temp: " + currentTemp + "\u00B0 F"); 
@@ -137,14 +137,14 @@ function fiveDayForecast(latitude, longitude){
 function addSearchedCity() {
        var lastSearchedCityList = document.createElement("li")
        lastSearchedCityList.classList = "searchedCity";
-       var lastSearchedCityBtn = document.createElement("button");
-       lastSearchedCityBtn.classList = "btn cityBtn";
-       lastSearchedCityBtn.textContent = searchedCities[searchedCities.length - 1];
+       var lastSearchedCityButton = document.createElement("button");
+       lastSearchedCityButton.classList = "btn cityBtn";
+       lastSearchedCityButton.textContent = searchedCities[searchedCities.length - 1];
        lastSearchedCityList.appendChild(lastSearchedCityBtn);
        $(".searchedCitiesList").append(lastSearchedCityList);
 }
 
-$(".searchBtn").on("click", getCity);
+$(".searchButton").on("click", getCity);
 $(document).on("click", ".cityBtn", function() {
     var btnCity = event.target.textContent
     getCity(btnCity);
